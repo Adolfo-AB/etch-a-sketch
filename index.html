@@ -6,10 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Etch-a-Sketch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Sketch 'n Stretch</title>
 </head>
 <body>
-    <div id="grid-container">
+    <div id="sketch-board">
+        <h1 id="board-title"><span class="accent-color-letter">S</span>ketch <span class="accent-color-letter2">'n</span> <span class="accent-color-letter">S</span>tretch</h1>
+        <div id="board-body">
+            <div id="board-upper-elems">
+                <div id="board-left-elems">
+                    <div class="color-mode-container">
+                        <div class="color-button">
+                            <input type="radio" id="color-mode-pen" name="color-mode-pen" value="color-mode-pen" checked>
+                            <label for="color-mode-pen"></label>
+                            <p>PEN</p>
+                        </div>
+                        <div class="color-button">
+                            <input type="radio" id="color-mode-eraser" name="color-mode-eraser" value="color-mode-eraser">
+                            <label for="color-mode-eraser"></label>
+                            <p>ERASER</p>
+                        </div>
+                        <div class="color-button">
+                            <input type="radio" id="color-mode-confetti" name="color-mode-confetti" value="color-mode-confetti">
+                            <label for="color-mode-confetti"></label>
+                            <p>CONFETTI</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="grid-container">
+                </div>
+                <div class="right-buttons">
+                    <div class="color-picker color-button">
+                        <input type="color" id="color" value="#ff3c00">
+                        <p>COLOR</p>
+                    </div>
+                    <div class="clear">
+                        <button type="button" id="clear-button"></button>
+                        <p>CLEAR</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="slider-container">
+                <input type="range" min="16" max="64" value="16" id="grid-size-slider">
+                <p>GRID SIZE</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
