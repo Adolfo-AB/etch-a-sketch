@@ -1,2 +1,2 @@
 # etch-a-sketch
-Etch-a-sketch dummy project (The Odin Project)
+Etch-a-sketch dummy project (part of The Odin Project curriculum)
