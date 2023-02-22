@@ -48,8 +48,8 @@ h1 {
   align-items: center;
   background-color: var(--bg-color);
   border: 10px solid var(--accent-color2);
-  width: 50vw;
-  height: 75vh;
+  width: 1000px;
+  height: 1000px;
   border-radius: 25px;
 }
 
